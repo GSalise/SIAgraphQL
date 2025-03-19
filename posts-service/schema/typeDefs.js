@@ -1,4 +1,4 @@
-const { gql } = require ('apollo-server');
+const { gql } = require('apollo-server');
 
 const typeDefs = gql`
   type Post {
@@ -16,6 +16,11 @@ const typeDefs = gql`
     createPost(title: String!, content: String!): Post
     updatePost(id: Int!, title: String, content: String): Post
     deletePost(id: Int!): Post
-  }`;
-  
-  module.exports = typeDefs;
+  }
+
+  type Subscription {
+    postCreated: Post
+  }
+`;
+
+module.exports = typeDefs;

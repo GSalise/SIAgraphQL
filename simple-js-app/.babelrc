@@ -1,0 +1,4 @@
+// filepath: /home/gian/Documents/SIA/simple-js-app/.babelrc
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+  }

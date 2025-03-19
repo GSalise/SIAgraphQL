@@ -1,0 +1,27 @@
+{
+  "name": "simple-js-app",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^8.4.1",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "license": "ISC",
+  "description": "This project is a simple JavaScript application that displays posts per user using data fetched from two separate services: `posts-service` and `users-service`. The application is structured to provide a clear separation of concerns, with components dedicated to displaying users and their respective posts.",
+  "keywords": [],
+  "author": ""
+}
