@@ -12,6 +12,7 @@
   "dependencies": {
     "@prisma/client": "^6.5.0",
     "apollo-server": "^3.13.0",
+    "axios": "^1.8.4",
     "graphql": "^16.10.0",
     "graphql-subscriptions": "^3.0.0",
     "prisma": "^6.5.0",
