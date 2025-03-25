@@ -73,13 +73,13 @@ const resolvers = {
   },
   Subscription: {
     postCreated: {
-      subscribe: () => pubSub.asyncIterator([POST_CREATED]),
+      subscribe: () => pubSub.asyncIterableIterator([POST_CREATED]),
     },
     postUpdated: {
-      subscribe: () => pubSub.asyncIterator([POST_UPDATED]),
+      subscribe: () => pubSub.asyncIterableIterator([POST_UPDATED]),
     },
     postDeleted: {
-      subscribe: () => pubSub.asyncIterator([POST_DELETED]),
+      subscribe: () => pubSub.asyncIterableIterator([POST_DELETED]),
     },
   },
 };

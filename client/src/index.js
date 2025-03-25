@@ -10,18 +10,11 @@ import { createClient } from 'graphql-ws';
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { ApolloProvider } from '@apollo/react-hooks';
 
-// HTTP Link
-const httpLink = new HttpLink({
-  uri: 'http://localhost:4002/graphql',
-  fetch: (uri, options) => {
-    console.log(`HTTP request to ${uri}`);
-    return fetch(uri, options);
-  }
-});
+import { httpLink } from './links';
 
 // WebSocket Link
 const wsLink = new GraphQLWsLink(createClient({
-  url: 'ws://localhost:4002/graphql/',
+  url: 'ws://localhost:4002/subscriptions',
   on: {
     connected: () => console.log('WebSocket connected'),
     connecting: () => console.log('WebSocket connecting'),
