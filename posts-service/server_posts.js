@@ -23,7 +23,7 @@ const schema = makeExecutableSchema({ typeDefs, resolvers });
 // Create a WebSocket server
 const wsServer = new WebSocketServer({
   server: httpServer, // Use the HTTP server we created
-  path: '/subscriptions', // WebSocket path for subscriptions
+  path: '/graphql', // WebSocket path for subscriptions
 });
 
 // Handle WebSocket connections for subscriptions
@@ -66,6 +66,6 @@ server.start().then(() => {
   // Start the HTTP server
   httpServer.listen({ port: 4002 }, () => {
     console.log(`Server running at http://localhost:4002/graphql`);
-    console.log(`Subscriptions ready at ws://localhost:4002/subscriptions`);
+    console.log(`Subscriptions ready at ws://localhost:4002/graphql`);
   });
 });

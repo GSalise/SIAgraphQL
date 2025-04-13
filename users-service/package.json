@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.5.0",
+    "amqplib": "^0.10.7",
     "apollo-server": "^3.13.0",
     "axios": "^1.8.4",
     "graphql": "^16.10.0",

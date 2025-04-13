@@ -14,7 +14,7 @@ import { httpLink } from './links';
 
 // WebSocket Link
 const wsLink = new GraphQLWsLink(createClient({
-  url: 'ws://localhost:4002/subscriptions',
+  url: 'ws://localhost:4002/graphql',
   on: {
     connected: () => console.log('WebSocket connected'),
     connecting: () => console.log('WebSocket connecting'),
